@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace Girishl\Tail\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class TailCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'laravel-tail-clone';
 
     public $description = 'My command';
 

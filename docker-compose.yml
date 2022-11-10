@@ -1,0 +1,30 @@
+version: '3'
+
+services:
+  nginx:
+    build:
+      context: ./docker/nginx
+      dockerfile: Dockerfile
+    image: nginx:latest
+    container_name: tail_nginx
+    depends_on:
+      - php
+    ports:
+      - 80:80
+      - 443:443
+    networks:
+      - tail-package
+
+  php:
+    build:
+      context: ./docker/php
+      dockerfile: Dockerfile
+    container_name: tail_php
+    volumes:
+      - ./:/var/www/html
+    networks:
+      - tail-package
+
+networks:
+  tail-package:
+    name: tail-package
