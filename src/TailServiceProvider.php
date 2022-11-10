@@ -2,9 +2,9 @@
 
 namespace Girishl\Tail;
 
+use Girishl\Tail\Commands\TailCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Girishl\Tail\Commands\TailCommand;
 
 class TailServiceProvider extends PackageServiceProvider
 {

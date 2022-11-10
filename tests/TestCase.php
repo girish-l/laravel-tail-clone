@@ -2,9 +2,9 @@
 
 namespace Girishl\Tail\Tests;
 
+use Girishl\Tail\TailServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Girishl\Tail\TailServiceProvider;
 
 class TestCase extends Orchestra
 {
